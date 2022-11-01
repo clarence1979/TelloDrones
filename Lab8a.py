@@ -2,7 +2,7 @@ from djitellopy import Tello
 import time
 import cv2
 
-tello=Tello()
+tello=Tello() # or tello = Tello('192.168.86.72',8889) 
 tello.connect()
 
 time.sleep(5) #pauses for 5 seconds
