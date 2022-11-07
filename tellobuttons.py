@@ -3,8 +3,9 @@ import tkinter.messagebox
 from djitellopy import Tello
 
 #tello = Tello('192.168.86.72',8889)
+#If tello not connected to wifi, delete the IP and the port
 
-#tello.connect()
+#tello.connect() #Uncomment when ready to fly
 
 # Let's create the Tkinter window
 window = tkinter.Tk()
@@ -17,7 +18,7 @@ def takeoff1():
 def land1():    
     tello.land()
 def left1():    
-    tello.move_left(100)
+    tello.move_left(100) #values 20-500cm
 def right1():    
     tello.move_right(100)
 
