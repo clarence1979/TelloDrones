@@ -10,7 +10,7 @@ tello = Tello()
 tello.connect()
 
 
-
+time.sleep(2)
 x=int(input("Enter the number of flips:\n"))
 print("You have entered "+x+" number of flips")
 
